@@ -476,6 +476,7 @@ menu a:hover{
 .plans .card p {
     margin: 0;
     font-size: 20px;
+    width: 100%;
 }
 
 .plans .card button {
