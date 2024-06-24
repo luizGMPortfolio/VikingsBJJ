@@ -61,13 +61,6 @@ hr {
 }
 
 
-.textShadowWhite {
-    color: #fff;
-    text-shadow: 2px 2px #141414;
-}
-
-
-
 header {
     width: 100%;
     position: fixed;
@@ -78,6 +71,10 @@ header {
     display: flex;
     justify-content: space-around;
 }
+
+
+
+
 .toggle{
     display: none;
     cursor: pointer;
@@ -112,14 +109,7 @@ header {
     right: 0;
     animation: slide 50ms;
 }
-@keyframes slide {
-    0%{
-        right: -100px;
-    }
-    100%{
-        right: 0;
-    }
-}
+
 .SocialMedia {
     width: 30%;
     display: flex;
@@ -284,6 +274,9 @@ menu a:hover{
 .model .title div{
     display: flex;
 }
+.model .title div span{
+    text-shadow: 1px 1px #e08c0f;
+}
 .model .title h4{
     font-size: 60px;
     margin: 0;
@@ -304,6 +297,7 @@ menu a:hover{
 }
 .model .title p{
     color: #000000;
+
 }
 
 
@@ -374,7 +368,7 @@ menu a:hover{
     padding: 40px 0 ;
 }
 
-.times .box {
+.times .boxs {
     display: flex;
     min-width: 450px;
     width: 100%;
@@ -382,7 +376,7 @@ menu a:hover{
     flex-wrap: wrap;
 }
 
-.adult {
+.times .boxs .box {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     min-width: 350px;
@@ -392,7 +386,7 @@ menu a:hover{
 
 }
 
-.adult .title {
+.times .boxs .box .title {
     display: flex;
     align-items: center;
     background-color: #74747C;
@@ -402,7 +396,7 @@ menu a:hover{
     border-top-right-radius: 15px;
 }
 
-.adult .subTitle {
+.times .boxs .box .subTitle {
     height: 30px;
     background-color: #000000;
     display: flex;
@@ -410,7 +404,7 @@ menu a:hover{
     align-items: center;
 }
 
-.adult ul {
+.times .boxs .box ul {
     display: flex;
     list-style: none;
     padding: 0;
@@ -420,7 +414,7 @@ menu a:hover{
 
 }
 
-.adult ul li {
+.times .boxs .box ul li {
     width: 100%;
     text-align: center;
     display: flex;
@@ -490,7 +484,13 @@ menu a:hover{
     padding: 5px;
     background-color: #e08c0f;
     color: #fff;
-
+    transition: 300ms;
+}
+.plans .card button:hover{
+    background-color: #bb9256;
+}
+.plans .card button a{
+    color: #fff
 }
 
 .value {
@@ -630,6 +630,9 @@ footer h2{
     width: 50px;
     height: 50px;
 }
+.Box3 p{
+    width: inherit;
+}
 
 .BoxContact {
     display: flex;
@@ -638,6 +641,48 @@ footer h2{
     gap: 10%;
 }
 
+.Op1s{
+    animation: opacity 1s;
+}
+.Op2s{
+    animation: opacity 2s;
+}
+.Op3s{
+    animation: opacity 3s;
+}
+.Op4s{
+    animation: opacity 4s;
+}
+.Op5s{
+    animation: opacity 5s;
+}
+.Op6s{
+    animation: opacity 6s;
+}
+.Up:hover{
+    transition: 200ms;
+    transform: translateY(-10px);
+}
+
+@keyframes slide {
+    0%{
+        right: -100px;
+    }
+    100%{
+        right: 0;
+    }
+}
+@keyframes opacity {
+    0%{
+        opacity: 0;
+    }
+    20%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
 
 @media (max-width: 900px) {
     .toggle{
